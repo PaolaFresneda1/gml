@@ -1,0 +1,13 @@
+.contenedor {
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+.container {
+  justify-content: center; /* Centrar horizontalmente */
+  
+}
+
+.card-title {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-weight: bold;
+}

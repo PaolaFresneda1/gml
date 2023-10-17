@@ -66,7 +66,23 @@
               <input type="text" [(ngModel)]="selectedProduct.logo" placeholder="Logo" class="form-control">
             </div>
           </div>
-          <button (click)="addOrEdit()" class="btn btn-primary mt-2">Enviar Datos</button>
+
+          <div class="row g-3 align-items-center mt-2">
+            <div class="col-auto">
+              <label for="descripcion" class="col-form-label">Fecha Liberación</label>
+            </div>
+            <div class="col-auto form-group">
+              <input type="date" id="start" name="trip-start" min="2023-10-01" max="2023-12-31" [(ngModel)]="selectedProduct.fechaLiberacion" />
+            </div>
+
+            <div class="col-auto">
+              <label for="nombre" class="col-form-label">Fecha Reestruturación</label>
+            </div>
+            <div class="col-auto form-group">
+              <input type="date" id="start" name="trip-start" min="2023-10-01" max="2023-12-31" [(ngModel)]="selectedProduct.fechaReestruturacion" />
+            </div>
+          </div>
+          <button (click)="addOrEdit()" class="btn btn-dark mt-2">Enviar Datos</button>
           <button *ngIf="selectedProduct.id !== 0" class="btn btn-danger mt-2" (click)="delete()">Eliminar</button>
         </div>
       </div>
